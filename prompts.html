@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Prompts - BuiltbyAmaan</title>
+  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="index.html" class="logo">Built<span>by</span>Amaan</a>
+
+    <input type="checkbox" id="check" hidden>
+    <label class="menu-icons" for="check">
+      <i id="menu_icon" class="fa-solid fa-bars"></i>
+      <i id="close_icon" class="fa-solid fa-xmark"></i>
+    </label>
+
+    <nav class="nav">
+      <ul class="option">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="prompts.html" class="nav-link active">Prompts</a></li>
+        <li><a href="index.html#contact" class="side_btn">Contact</a></li>
+      </ul>
+
+      <ul class="sidebar">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="prompts.html">Prompts</a></li>
+        <li class="back"><a href="index.html#contact" class="side_btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="prompts-main">
+
+    <!-- Hero -->
+    <section class="prompts-hero">
+      <div class="prompts-hero-content">
+        <span class="section-tag">AI Creativity</span>
+        <h1 class="prompts-hero-title">Trending AI Prompts</h1>
+        <p class="prompts-hero-desc">Viral prompts & filters curated by Amaan. Use these in ChatGPT, Midjourney, or any AI tool to transform your photos.</p>
+        <div class="prompts-hero-badges">
+          <span><i class="fa-solid fa-fire"></i> Trending</span>
+          <span><i class="fa-solid fa-wand-magic-sparkles"></i> Curated</span>
+          <span><i class="fa-solid fa-copy"></i> Copy & Use</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <div class="prompts-filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="lofi">Lofi</button>
+      <button class="filter-btn" data-filter="anime">Anime</button>
+      <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+      <button class="filter-btn" data-filter="vintage">Vintage</button>
+    </div>
+
+    <!-- Prompts Grid -->
+    <section class="prompts-grid-section">
+      <div class="prompts-grid" id="promptsGrid">
+
+        <!-- Card 1: Lofi Dusk -->
+        <div class="prompt-card" data-category="lofi">
+          <div class="prompt-card-img-wrap">
+            <img src="Images/sample1.jpeg" alt="Lofi Dusk Filter" class="prompt-card-img" />
+            <div class="prompt-card-overlay">
+              <span class="prompt-card-tag"><i class="fa-solid fa-fire"></i> Trending</span>
+            </div>
+          </div>
+          <div class="prompt-card-body">
+            <div class="prompt-card-meta">
+              <span class="prompt-cat lofi-cat">Lofi</span>
+              <span class="prompt-date"><i class="fa-regular fa-calendar"></i> May 16, 2026</span>
+            </div>
+            <h3 class="prompt-card-title">Lofi Dusk Trending Filter 2026</h3>
+            <p class="prompt-card-desc">Transform your photos with this viral lofi dusk aesthetic. Warm golden tones with a soft, dreamy vibe that's taking Instagram by storm.</p>
+            <div class="prompt-text-box">
+              <p class="prompt-text" id="prompt1">Apply a trendy Instagram-style NIGHT flash aesthetic to the uploaded photo while fully preserving every original detail of the subject’s face, hairstyle, expression, pose, composition, and background. Transform the scene into a realistic nighttime environment with deep moody shadows, dark cinematic tones, and strong direct flash lighting. Add a realistic dusty air effect with floating grain particles illuminated by the camera flash for a viral Instagram reel/photo vibe. Create a powerful rear glow and subtle neon-style backlight behind the subject, producing atmospheric haze and dreamy bloom around the hair and shoulders. Keep the exact same framing, pose, camera angle, and background structure untouched. Enhance skin with glossy luminous highlights and soft peachy undertones while maintaining natural realism. Add realistic flash reflections, high contrast, soft shadow falloff, and subtle wet-look shine on the skin for a luxury night-photography aesthetic. Enhance stray hair strands with sharp rim lighting from the backlight. Hard rule: Do not change the face, hairstyle, facial structure, skin tone, body shape, composition, or background elements. Keep everything identical to the original image except for the cinematic dusty night-flash lighting and atmosphere.</p>
+              <button class="copy-btn" onclick="copyPrompt('prompt1', this)">
+                <i class="fa-regular fa-copy"></i> Copy Prompt
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Anime Style -->
+        <div class="prompt-card" data-category="anime">
+          <div class="prompt-card-img-wrap">
+            <img src="https://www.orissapost.com/wp-content/uploads/2025/03/Ghibil-1.jpg" alt="Ghibli Art" class="prompt-card-img" />
+            <div class="prompt-placeholder-img anime-placeholder">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>Anime Style</span>
+            </div>
+            <div class="prompt-card-overlay">
+              <span class="prompt-card-tag"><i class="fa-solid fa-star"></i> Popular</span>
+            </div>
+          </div>
+          <div class="prompt-card-body">
+            <div class="prompt-card-meta">
+              <span class="prompt-cat anime-cat">Anime</span>
+              <span class="prompt-date"><i class="fa-regular fa-calendar"></i> June 1, 2026</span>
+            </div>
+            <h3 class="prompt-card-title">Studio Ghibli Photo Filter</h3>
+            <p class="prompt-card-desc">Convert your real photo into a beautiful Studio Ghibli inspired anime artwork with magical details.</p>
+            <div class="prompt-text-box">
+              <p class="prompt-text" id="prompt2">Convert this photo into Studio Ghibli anime art style, soft watercolor textures, magical lighting, detailed background, whimsical atmosphere, Hayao Miyazaki inspired, warm color palette, painterly brushstrokes, fantasy elements, cinematic composition.</p>
+              <button class="copy-btn" onclick="copyPrompt('prompt2', this)">
+                <i class="fa-regular fa-copy"></i> Copy Prompt
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Cute 3D Model -->
+        <div class="prompt-card" data-category="3d">
+          <div class="prompt-card-img-wrap">
+            <img src="Images/sample3.jpeg" alt="Cute 3D Model" class="prompt-card-img" />
+            <div class="prompt-placeholder-img anime-placeholder">
+              <i class="fa-solid fa-cube"></i>
+              <span>Cute 3D Model</span>
+            </div>
+            <div class="prompt-card-overlay">
+              <span class="prompt-card-tag"><i class="fa-solid fa-heart"></i> Custom</span>
+            </div>
+          </div>
+          <div class="prompt-card-body">
+            <div class="prompt-card-meta">
+              <span class="prompt-cat anime-cat">3D</span>
+              <span class="prompt-date"><i class="fa-regular fa-calendar"></i> June 9, 2026</span>
+            </div>
+            <h3 class="prompt-card-title">Cute 3D Model Prompt</h3>
+            <p class="prompt-card-desc">Editable placeholder for a cute 3D model prompt — click to edit your prompt below.</p>
+            <div class="prompt-text-box">
+              <p class="prompt-text" id="prompt3" contenteditable="true">Use a real face as a reference photo.
+The background is the same as in the photo. The lighting is warm, soft, and clean, with subtle shadows. Around the image, add several mini chibi (3D cute style) versions of the character, While maintaining the original facial features. expressions: jumping cheerfully waving sitting relaxed holding a drink cute and playful expressions Add hand-drawn white doodle elements: outline around the main body stars, hearts, sparkles motion lines small cute icons Add aesthetic handwriting such as: “shine, “bright day,”happy,”smile” etc. (casual doodle font) Overall style: clean & aesthetic composition white sticker outline soft pastel color tone high detall 3D chibi glossy look cute Korean style instagrammable. 4:5</p>
+              <button class="see-more-btn" style="display:none;" onclick="toggleSeeMore(this)">See More</button>
+              <button class="copy-btn" onclick="copyPrompt('prompt3', this)">
+                <i class="fa-regular fa-copy"></i> Copy Prompt
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="prompts-cta">
+      <div class="prompts-cta-inner">
+        <i class="fa-solid fa-wand-magic-sparkles cta-icon"></i>
+        <h3>Want a Custom Prompt?</h3>
+        <p>Reach out and I'll create a personalized AI prompt specifically for your photos and style.</p>
+        <a href="index.html#contact" class="btn1" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> <strong>BuiltbyAmaan</strong> · All Rights Reserved</p>
+      <p class="footer-sub">Crafted with <i class="fa-solid fa-heart" style="color:#ff4f91"></i> & lots of ☕</p>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Copy prompt
+    function copyPrompt(id, btn) {
+      const text = document.getElementById(id).textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        btn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy Prompt';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+
+    // Filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.prompt-card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'flex';
+            card.style.animation = 'fadeInUp 0.4s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Scroll progress
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      document.getElementById('scrollProgress').style.width = progress + '%';
+    });
+
+    // Cursor
+    const cursor = document.getElementById('cursorGlow');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    // Sidebar close on link click
+    const sidebarLinks = document.querySelectorAll('.sidebar a');
+    const check = document.getElementById('check');
+    sidebarLinks.forEach(link => { link.addEventListener('click', () => { check.checked = false; }); });
+
+    // Mobile menu toggle
+    const menuLabel = document.querySelector('.menu-icons');
+    const sidebar = document.querySelector('.sidebar');
+    if (menuLabel) {
+      menuLabel.addEventListener('click', () => {
+        const isOpen = menuLabel.classList.toggle('open');
+        if (sidebar) sidebar.classList.toggle('open', isOpen);
+      });
+    }
+    // Ensure links close sidebar and reset icon state
+    sidebarLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (menuLabel) menuLabel.classList.remove('open');
+        if (sidebar) sidebar.classList.remove('open');
+      });
+    });
+
+    // See More toggle for long prompts
+    function toggleSeeMore(btn) {
+      const p = btn.parentElement.querySelector('.prompt-text');
+      if (!p) return;
+      if (p.classList.contains('collapsed')) {
+        p.classList.remove('collapsed');
+        btn.textContent = 'See Less';
+      } else {
+        p.classList.add('collapsed');
+        btn.textContent = 'See More';
+        p.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    // Initialize collapsed state and ensure a See More button exists for long prompts
+    function initSeeMore() {
+      document.querySelectorAll('.prompt-text').forEach(p => {
+        const parent = p.parentElement;
+        let seeBtn = parent.querySelector('.see-more-btn');
+
+        // determine visible lines threshold (3 for small, 4 for wide)
+        const maxLines = window.innerWidth >= 900 ? 4 : 3;
+        const style = window.getComputedStyle(p);
+        const lineHeight = parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.4;
+        const maxHeight = lineHeight * maxLines;
+
+        // ensure full height measured
+        p.classList.remove('collapsed');
+        const fullHeight = p.scrollHeight;
+
+        if (fullHeight > maxHeight + 1) {
+          p.classList.add('collapsed');
+          if (!seeBtn) {
+            seeBtn = document.createElement('button');
+            seeBtn.className = 'see-more-btn';
+            seeBtn.textContent = 'See More';
+            seeBtn.addEventListener('click', function() { toggleSeeMore(this); });
+            const copyBtn = parent.querySelector('.copy-btn');
+            if (copyBtn) copyBtn.parentElement.insertBefore(seeBtn, copyBtn);
+            else parent.appendChild(seeBtn);
+          } else {
+            seeBtn.style.display = 'inline-block';
+            seeBtn.textContent = 'See More';
+          }
+        } else {
+          if (seeBtn) seeBtn.style.display = 'none';
+        }
+      });
+    }
+
+    // Run initialization now in case DOMContentLoaded already fired, and also on DOMContentLoaded
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSeeMore);
+    } else {
+      initSeeMore();
+    }
+  </script>
+</body>
+</html>

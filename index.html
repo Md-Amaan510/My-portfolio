@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Mohammad Amaan Ansari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Animated Background Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="#home" class="logo">Built<span>by</span>Amaan</a>
+
+    <!-- Menu Toggle -->
+    <input type="checkbox" id="check" hidden>
+    <label class="menu-icons" for="check">
+      <i id="menu_icon" class="fa-solid fa-bars"></i>
+      <i id="close_icon" class="fa-solid fa-xmark"></i>
+    </label>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <ul class="option">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="prompts.html" class="nav-link">Prompts</a></li>
+        <li><a href="#contact" class="side_btn">Contact</a></li>
+      </ul>
+
+      <!-- Sidebar for Mobile -->
+      <ul class="sidebar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="prompts.html">Prompts</a></li>
+        <li class="back">
+          <a href="#contact" class="side_btn">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for work
+        </div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h2 class="hero-name">Mohammad Amaan Ansari</h2>
+        <div class="hero-title-wrapper">
+          <span class="hero-title" id="typingText"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Frontend developer crafting visually stunning interfaces. Proficient in HTML, CSS, and JavaScript.
+          Building responsive web applications for seamless user experiences.
+        </p>
+        <div class="btns">
+          <button class="btn1" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            <i class="fa-solid fa-paper-plane"></i> Hire Me
+          </button>
+          <a href="https://whatsapp.com/channel/0029Vb5q8jdBKfiASFqQ4r3c" target="_blank" class="btn2" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#projects" class="btn3">
+            View Work <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">1+</span>
+            <span class="stat-label">Year Exp</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Passion</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-img-glow"></div>
+        <img src="Images/me.png" alt="Mohammad Amaan Ansari" class="hero-img">
+        <div class="hero-img-orbit orbit1">
+          <div class="orbit-dot"><i class="fa-brands fa-html5"></i></div>
+        </div>
+        <div class="hero-img-orbit orbit2">
+          <div class="orbit-dot"><i class="fa-brands fa-css3-alt"></i></div>
+        </div>
+        <div class="hero-img-orbit orbit3">
+          <div class="orbit-dot"><i class="fa-brands fa-js"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-side">
+          <div class="about-img-frame">
+            <img src="Images/me2.jpg" alt="Amaan" />
+            <div class="about-img-decor"></div>
+          </div>
+          <div class="about-social-float">
+            <a href="https://github.com/md-amaan510" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:mohammadamaanansari665@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="about-text-side">
+          <p class="about-intro">Hi! I'm <strong>Amaan</strong>, a passionate web developer focused on creating modern, clean, and user-friendly websites.</p>
+          <p class="about-body">I love turning ideas into digital reality using the latest technologies. My journey started with curiosity and grew into a deep love for crafting beautiful user experiences on the web.</p>
+
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fa-solid fa-map-marker-alt"></i>
+              <span>India</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Computer Science Student</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-code"></i>
+              <span>Open to freelance</span>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#" class="btn-download">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+            <a href="#contact" class="btn-contact-link">Let's Talk →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">A selection of my work showcasing frontend design, responsiveness, and functionality.</p>
+      </div>
+
+      <div class="projects-container">
+
+        <div class="project-card" data-tilt>
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://md-amaan510.github.io/Login_form-/" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Login Form</h3>
+          <p>Modern and secure login UI with validation and smooth animations.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://md-amaan510.github.io/Sun-Bright/" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Sun Bright</h3>
+          <p>Clean landing page with responsive layout and modern aesthetics.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio showcasing skills, projects & personality.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>JavaScript App</h3>
+          <p>Interactive app built using vanilla JavaScript with clean UX.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>ES6+</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Responsive UI</h3>
+          <p>Mobile-first responsive web design that adapts beautifully.</p>
+          <div class="project-tags">
+            <span>CSS Grid</span><span>Flexbox</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Python Tool</h3>
+          <p>Automation & scripting project using Python with clean output.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Automation</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My Skills</h2>
+      </div>
+
+      <div class="skills-container">
+
+        <div class="skill-card reveal-card">
+          <div class="skill-card-header">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <h3>UI / UX Design</h3>
+          </div>
+          <p>Clean, user-friendly interfaces using Figma & Adobe XD.</p>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Proficiency</span><span>85%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="--target: 85%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-card">
+          <div class="skill-card-header">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5</h3>
+          </div>
+          <p>Semantic, SEO-optimized structure using modern HTML.</p>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Proficiency</span><span>90%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="--target: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-card">
+          <div class="skill-card-header">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS3</h3>
+          </div>
+          <p>Responsive layouts, animations, Flexbox & Grid.</p>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Proficiency</span><span>88%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="--target: 88%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-card">
+          <div class="skill-card-header">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+          </div>
+          <p>Dynamic interactions using ES6+ JavaScript.</p>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Proficiency</span><span>75%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="--target: 75%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-card">
+          <div class="skill-card-header">
+            <i class="fa-brands fa-java"></i>
+            <h3>Java</h3>
+          </div>
+          <p>Object-oriented programming, data structures, and robust applications.</p>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Proficiency</span><span>72%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="--target: 72%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-card">
+          <div class="skill-card-header">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Responsive Design</h3>
+          </div>
+          <p>Mobile-first layouts that adapt smoothly across all screen sizes.</p>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Proficiency</span><span>92%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="--target: 92%;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Let's Work Together</h3>
+          <p>Have an idea or project? I'd love to hear from you. Drop me a message and I'll get back to you shortly.</p>
+
+          <div class="contact-info-items">
+            <div class="contact-info-item">
+              <div class="cii-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span>Email</span>
+                <a href="mailto:mohammadamaanansari665@gmail.com">mohammadamaanansari665@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="cii-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <span>WhatsApp</span>
+                <a href="https://whatsapp.com/channel/0029Vb5q8jdBKfiASFqQ4r3c" target="_blank">Message me on WhatsApp</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="cii-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <span>GitHub</span>
+                <a href="https://github.com/md-amaan510" target="_blank">md-amaan510</a>
+              </div>
+            </div>
+          </div>
+
+          <img src="Images/1767950173526.jpg" alt="contacts_img" class="contact-img">
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Mohammad Amaan" required>
+          </div>
+          <div class="form-group">
+            <label>Your Email</label>
+            <input type="email" placeholder="amaan@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Project inquiry...">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/md-amaan510" target="_blank" class="social-link" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:mohammadamaanansari665@gmail.com" class="social-link" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://whatsapp.com/channel/0029Vb5q8jdBKfiASFqQ4r3c" target="_blank" class="social-link" title="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> <strong>BuiltbyAmaan</strong> · All Rights Reserved</p>
+      <p class="footer-sub">Crafted with <i class="fa-solid fa-heart" style="color:#ff4f91"></i> & lots of ☕</p>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
